@@ -1,3 +1,9 @@
+
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
 .nav {
 	background-color: #fdfcfc;
 }
@@ -208,6 +214,8 @@
 	background-color: #cccccc;
 	padding: 1% 0;
 }
+
+
 table{
 	margin:3% 42%;
 	text-align: center;
@@ -221,7 +229,7 @@ thead{
 
  td , th{
 	padding: 8px 30px;
-	font-size: 18px;
+	font-size: 16px;
 
 
 
@@ -242,4 +250,31 @@ footer{
 	font-size:16px;
 	margin-top: 20px;
 	
+}
+
+
+
+.localizacao iframe{
+	width: 35%;
+	height: 25em;
+	padding: 2em 39em;
+	margin: 0 auto;
+	
+}
+.localizacao p{
+	text-align: center;
+	padding: 1em 0;
+
+}
+
+.video iframe{
+	width: 35%;
+	height: 25em;
+	padding: 2em 39em;
+	margin: 0 auto;
+	
+}
+
+.video {
+	background-color: #cccccc;
 }

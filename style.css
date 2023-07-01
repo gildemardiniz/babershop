@@ -1,280 +1,42 @@
-
-
-body{
-	font-family: 'Poppins', sans-serif;
+.logo{
+    width: 50%;
+}
+.fundo-cinza{
+    background-color: #ececec;
 }
 
-.nav {
-	background-color: #fdfcfc;
-}
-
-.nav img {
-	float: left;
-	width: 120px;
-	padding: 0 0 0 10%;
+  .scroll-downs {
+    position: absolute;
+    top: 1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-bottom: 15px;
+    width :34px;
+    height: 55px;
   }
-
-
-.nav ul{
-	list-style-type: none;
-	margin: 0 auto;
-	padding: 2.6% 20% 2.6% 2.6%;
-	overflow: hidden;
-
-
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
   }
-  
-.nav li {
-	float:right;
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
   }
-  
-.nav li a {
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 40px 16px;
-	text-decoration: none;
-	text-transform: uppercase;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  .nav li a:hover {
-	color: #c78c19;
-  }
-
-
-#banner {
-	width: 100% ;
-	padding: 1.5px 0;
-}
-
-.titulo-centralizado{
-	text-align: center;
-	font-size: 40px;
-	font-weight: bold;
-	padding: 40px 20px 0 0;
-
-}
-
-.bloco{
-	background-color: #cccccc;
-
-}
-
-.bloco p{
-	padding: 30px;
-	margin-bottom: 10px;
-
-}
-
-.sobre{
-	width: 90%;
-	margin:0 auto;
-	align-items: center;
-	text-align: center;
-}	
-.sobre img{
-	width: 100%;
-
-}
-
-.sobre div{
-	display:inline-block;
-	text-align: center;
-	width: 40%;
-	padding: 2.5%;
-}
-
-.sobre-missao{
-	vertical-align: top;
-	margin: 0 auto;
-
-}
-.sobre-missao p{
-	padding-top: 16%;
-	font-size: 22px;
-	text-align: justify;
-}
-
-.sobre-missao strong{
-	font-weight: bold;
-	font-size: 24px;
-}
-
-
-.produtos {
-	width: 50%;
-	margin: 0 auto;
-	padding:50px 0;
-	
-	}
-
-.produtos li{
-	display:inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-	
-}
-
-.produtos li:hover{
-
-	border-color: #c78c19;
-}
-
-.produtos li:active{
-	
-	border-color: #ff0000;
-
-}
-
-.produtos h2{
-	font-size:30px;
-	font-weight: bold;
-	
-}
-
-.produto-descrição{
-	font-size: 18px;
-	margin-top: 10px;
-
-}
-
-.produto-preco{
-	font-weight:bold;
-	font-size: 22px;
-	margin-top: 10px;
-
-}
-
-.contato{
-
-	width: 100%;
-
-}
-
-.contato form{
-	padding: 2% 33%;
-	margin: 0 auto;
-}
-
-
-.contato h2{
-	font-weight: bold;
-
-	
-}
-
-.contato label, p{
-	font-size: 20px;
-	display: block;
-	margin: 0 0 1%;
-	color: #000000;
-}
-
-.input-padrao {
-	display: block;
-	margin: 0 0 2%;
-	padding: 1%;
-	width: 100%;
-}
-
-.listbox{
-	margin: 2% 0 2% 0;
-
-
-}
-
-.listbox select{
-	margin: 0.5% 0 0.5% 0;
-	padding: 0.6% 0.5%;
-	width: 20%;
-	font-size: 16px;
-}
-
-#enviar{
-	background-color: #000000;
-	color:#ffffff;
-	width: 40%;
-	padding: 2% 2%;
-	font-size: 15px;
-	margin: 5% 30%;
-	border: none;
-	border-radius: 5px;
-	cursor:pointer;
-
-}
-
-.atendimento{
-	background-color: #cccccc;
-	padding: 1% 0;
-}
-
-
-table{
-	margin:3% 42%;
-	text-align: center;
-	
-}
-
-thead{
-	font-weight: bold;
-	font-size: 50px;
-}
-
- td , th{
-	padding: 8px 30px;
-	font-size: 16px;
-
-
-
- }
-
-
-
-
-footer{
-		text-align: center;
-		background: #000000c0;
-		padding: 40px 0;
-}
-	
-.Copyright{
-	color: #ffffff;
-	font-weight: bold;
-	font-size:16px;
-	margin-top: 20px;
-	
-}
-
-
-
-.localizacao iframe{
-	width: 35%;
-	height: 25em;
-	padding: 2em 39em;
-	margin: 0 auto;
-	
-}
-.localizacao p{
-	text-align: center;
-	padding: 1em 0;
-
-}
-
-.video iframe{
-	width: 35%;
-	height: 25em;
-	padding: 2em 39em;
-	margin: 0 auto;
-	
-}
-
-.video {
-	background-color: #cccccc;
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
 }

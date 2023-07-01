@@ -1,169 +1,356 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Barbearia Alura</title>
+<html lang="pt-br">
 
-		<link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+	<title>BaberShop</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="./style.css">
+</head>
 
-	</head>
-	<body>
-		<header>
-			<div class="nav" id="nav">
-			<h1><img src="/logo.png"></h1-->
-			<nav>
-			<ul>
-				<li><a href="#contato">Contato</a></li>
-				<li><a href="#servicos">Serviços</a></li>
-				<li><a href="#sobre">sobre</a></li>
-				<li><a href="#nav">inicio</a></li>
-				
-			</ul>
-			</nav>
+<body>
+
+	<nav id="home" class="navbar navbar-expand-md bg-light navbar-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<h1 class="m-0"><img class="d-block logo" src="./assets/logo.png" alt="Logo BaberShop"></h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">HOME</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#sobre">SOBRE</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#produtos">PRODUTOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#servicos">SERVIÇOS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">CONTATO</a>
+					</li>
+				</ul>
 			</div>
-		</header>
+		</div>
+	</nav>
 
-		<main>
-			<section class="banner">
-			<img id="banner" src="/banner.jpg">
-			</section>
-
-			<section class="bloco">
-			<div class="sobre" id="sobre">
-			<h2 class="titulo-centralizado">A Barbearia Alura</h2>
-			<div>
-			<img src="/imgsobre.jpg" alt="logo da babearia alura">
+	<div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img class="w-100 d-none d-md-block" src="./assets/banner.png" alt="">
+				<img class="w-100 d-md-none" src="./assets/banner-sm.png" alt="">
 			</div>
-			<div class="sobre-missao">
-			<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia. <br><br>
-
-			<em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em> <br><br>
-
-			Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+		</div>
+		<div class="scroll-downs d-none d-xl-block">
+			<div class="mousey">
+				<div class="scroller"></div>
 			</div>
+		</div>
+	</div>
+
+	<section id="sobre" class="py-5">
+		<h2 class="text-center my-3 my-xl-5">
+			Quem Somos
+		</h2>
+		<div class="container ">
+			<div class="text-dark row justify-content-center mx-2">
+				<p class="fs-1 text-center">DESDE 2015</p>
+				<p class="fs-3 text-center">A Barber Shop é uma barbearia que combina o tradicional com o moderno,
+					sempre preocupada com seu estilo. Aqui enquanto você corta seu cabelo ou cuida da sua barba,
+					aproveita para degustar uma de nossas cervejas artesanais, ver uma tv ou ainda jogar um pinball.
+				</p>
+				<p class="card-text col-md-4 text-center text-bg-dark py-3">Agende seu horário</p>
 			</div>
-			</section>
+		</div>
+	</section>
 
-			<section class="servicos" id="servicos">
-			<h2 class="titulo-centralizado">Nossos Serviços</h2>
-			<ul class="produtos">
-			<li>
-			<h2>Cabelo</h2>
-			<img src="/cabelo.jpg" alt="">
-			<p class="produto-descrição">Na tesoura ou máquina, como o cliente preferir</p>
-			<p class="produto-preco">R$ 25,00</p>
-			</li>
-			<li>
-			<h2>Barba</h2>
-			<img src="/barba.jpg" alt="">
-			<p class="produto-descrição">Corte e desenho profissional de barba</p>
-			<p class="produto-preco">R$ 18,00</p>
-			</li>
-			<li>
-			<h2>Babelo & Barba</h2>
-			<img src="/cabelo+barba.jpg" alt="">
-			<p class="produto-descrição">Pacote completo de cabelo e barba.</p>
-			<p class="produto-preco">R$ 35,00</p>
-			</li>
-			</ul>
-			</section>
-			
-			<section class="video">
-				<h2 class="titulo-centralizado">Inscreva-se no nosso canal</h2>
-				<iframe src="https://www.youtube.com/embed/jp-fXpAFgD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
+	<section id="servicos">
+		<h2 class="text-center my-3 my-xl-5">Nossos serviços</h2>
+		<div class="container row mx-auto">
+			<div class="col-12 col-md-4 col-xxl-4 pb-4">
+				<div class="card">
+					<img src="./assets/servicos/1.png" alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Corte de cabelo</h5>
+						<p class="fw-bold">R$40,00</p>
+					</div>
+					<div class="card-header bg-danger text-bg-dark">
+						<p class="text-center card-text">
+							Saiba mais
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 col-xxl-4 pb-4">
+				<div class="card">
+					<img src="./assets/servicos/3.png" alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Barbear</h5>
+						<p class="fw-bold">R$30,00</p>
+					</div>
+					<div class="card-header bg-primary text-bg-dark">
+						<p class="text-center card-text">
+							Saiba mais
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-4 col-xxl-4 pb-4">
+				<div class="card">
+					<img src="./assets/servicos/2.png" alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Aparar a barba</h5>
+						<p class="fw-bold">R$40,00</p>
+					</div>
+					<div class="card-header bg-danger text-bg-dark">
+						<p class="text-center card-text">
+							Saiba mais
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			<section class="localizacao">
-				<h2 class="titulo-centralizado">Nossa localização</h2>
-				<p>Nosso estabelecimento está localizado no coração da cidade.</p>
+	<section class="py-3 bg-danger">
+		<form class="container my-4 p-3 text-center mx-auto col-md-4">
+			<h5 class="text-light">
+				Quer receber nossas novidades, promoções exclusivas? Assine a nossa newslater
+			</h5>
+			<div class="row justify-content-center m-1">
+				<input type="email" class="form-control border-secondary rounded-0 py-2 mb-2"
+					placeholder="Digite seu e-mail" aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
+				<p class="card-text text-center bg-dark text-light col-md-8 py-2">
+					Assinar
+				</p>
 
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65124785.2038805!2d-73.45247015167988!3d4.956047563628292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5f371c4e59%3A0x9938d55dca1fbf51!2sCaelum%20-%20Escola%20de%20Tecnologia!5e0!3m2!1spt-BR!2sbr!4v1626483788172!5m2!1spt-BR!2sbr"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</form>
+	</section>
 
+	<section id="produtos" class="fundo-cinza py-3">
+		<h2 class="text-center py-4">Nossos produtos</h2>
+		<div class="container row mx-auto">
 
-			</section>
-
-			<section class="atendimento" id="atendimento">
-				<h2 class="titulo-centralizado">Horários de atendimento</h2>
-				<table>
-				<thead>
-				<tr>
-				<th>Dia</th>
-				<th>Horário</th>
-				</tr>
-				</thead>
-				<tbody>
-				<tr>
-				<td>Segunda</td>
-				<td>08:00 às 17:45</td>
-				</tr>
-				<tr>
-				<td>Terça</td>
-				<td>08:00 às 17:45</td>
-				</tr>
-				<tr>
-				<td>Quarta</td>
-				<td>08:00 às 17:45</td></tr>
-				<tr>
-				<td>Quinta</td>
-				<td>08:00 às 17:45</td></tr>
-				<tr>
-				<td>Sexta</td>
-				<td>08:00 às 17:45</td>
-				</tr>
-				<tr>
-				<td>Sábado</td>
-				<td>08:00 às 11:45</td>
-				</tr>
-				</tbody>		
-				</table>
-				</section>
-
-			<section class="contato" id="contato">
-			<h2 class="titulo-centralizado">Contato</h2>
-			<form>
-			<label for="nome">Nome</label>
-			<input type="text" id ="nome" class="input-padrao" required>
-
-			<label for="email">Email</label>
-			<input type="email" id ="email"class="input-padrao" required>
-
-			<label for="telefone">Telefone</label>
-			<input type="tel" id ="telefone"class="input-padrao"  placeholder="(xx)xxxxx-xxxx" required>
-
-			<label for="mensagem">Mensagem</label>
-			<textarea class="input-padrao" id="mensagem" cols="30" rows="10" required></textarea>
-
-			<div class="radio">
-			<p>Como prefere nosso contato?</p>
-
-			<label for="radio-email"><input name="contato"type="radio"  value="email" id="radio-email">Email</label>            
-
-			<label for="radio-telefone"><input name="contato" type="radio"  value="telefone" id="radio-telefone">Telefone</label>            
-
-			<label for="radio-whatsapp"><input name="contato" type="radio"  value="whatsapp" id="radio-whatsapp">Whatsapp</label>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/kit-barba-shampoo-balm-oleo-black-barts-single-ron-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Kit Shampoo + Balm + Óleo Single Ron Black Barts</h5>
+						<p class="card-text">
+							Kit completo com tudo o que um barbudo precisa para manter sua barba bem cuidada.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/kit-shampoo-balm-oleo-coffee-blend-barba-brava-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Kit Shampoo + Balm + Óleo Coffee Blend Barba Brava</h5>
+						<p class="card-text">
+							Kit completo com tudo o que um barbudo precisa para manter sua barba bem cuidada.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/kit-balm-oleo-shampoo-barba-de-respeito-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Kit Shampoo + Balm + Óleo Barba de Respeito</h5>
+						<p class="card-text">
+							Kit Ice foi feito para aquele barbudo com sangue viking correndo em suas veias.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/combo-beard-balm-danger-shampoo-gasoline-barba-forte-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Kit Balm Danger + Shampoo Gasoline Cabelo e Barba</h5>
+						<p class="card-text">
+							Shampoo de uso diário para barba e cabelo.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/safety-razor-aparelho-de-barbear-muhle-r89-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Aparelho De Barbear - Safety Razor Muhle</h5>
+						<p class="card-text">
+							Na fabricação dos acessórios de barbear MUHLE, você encontra suas melhores qualidades.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/safety-razor-chatsworth-chrome-aparelho-de-barbear-edwin-jagger-csr-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Aparelho De Barbear - Safety Razor Edwin Jagger</h5>
+						<p class="card-text">
+							Este fabuloso Safety Razor está equipado com a mais recente cabeça lâmina Edwin Jagger DE
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos/shavette-navalhete-parker-ptb-thebarbershop-200x200.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Navalhete Parker Preto PTB</h5>
+						<p class="card-text">
+							Os navalhetes de barbear são usados por barbeiros e barbearias em todo o mundo.
+							Este aparelho usa meia lâminas de barbear descartáveis.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 col-xxl-3 pb-4">
+				<div class="card">
+					<img src="./assets/produtos//safety-razor-knurled-aparelho-de-barbear-edwin-jagger-de89kn14bl-thebarbershop-200x200.jpg"
+						alt="">
+					<div class="card-body">
+						<h5 class="card-title fw-bold">Aparelho De Barbear - Safety Razor Edwin Barley</h5>
+						<p class="card-text">
+							O Safety Razor tem um cabo leve e um bom acabamento cromado com o nome de Edwin Jagger
+							impressa.
+						</p>
+						<p class="fw-bold">R$70,00</p>
+						<a href="#" class="btn btn-primary botao-lilas rounded-0 border-0">Comprar</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="listbox">
-			<label for="turno">Qual horário prefere ser atendido?</label>
-			<select name="turno" id="turno">
-			<option value="manha">Manhã</option>
-			<option value="tarde">Tarde</option>
-			<option value="noite">Noite</option>
-			</select>
-			</div>
-			<label for="checkbox"><input type="checkbox"  value="whatsapp" id="checkbox">Gostaria de receber nossas novidades por email?</label>
-			<input class="button"type="submit" value="Enviar" id="enviar">
-			</form>
-			</section>
-		</main>
 
-		<footer>
-		<img src="/logo-branco.png"  alt="logo da babearia alura">
-		<p class="Copyright"> &copy; Copyright Barbearia Alura – 2021</p>
-		</footer>
-	</body>
+		</div>
+	</section>
+
+	<section class="bg-dark py-5">
+		<h2 class="text-center py-3 text-light">Vantagens</h2>
+		<div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 px-3">
+			<div class="d-flex align-items-center">
+				<div><i class="bi bi-truck fs-1 text-danger"></i></div>
+				<div>
+					<div class="ms-3 mb-1 text-danger">FRETE GRÁTIS A PARTIR DE R$ 99,90</div>
+					<div class="texto-menor ms-3 text-light">Para regiões Sul, Sudeste</div>
+				</div>
+			</div>
+
+			<div class="d-flex">
+				<div><i class="bi bi-credit-card fs-1 text-danger"></i></div>
+				<div>
+					<div class="ms-3 mb-1 text-danger">PARCELE EM ATÉ 10X SEM JUROS</div>
+					<div class="texto-menor ms-3 text-light">em todos os cartões de crédito</div>
+				</div>
+			</div>
+
+			<div class=" d-flex">
+				<div><i class="bi bi-whatsapp fs-1 text-danger"></i></div>
+				<div>
+					<div class="ms-3 mb-1 text-danger">ATENDIMENTO ONLINE</div>
+					<div class="texto-menor ms-3 text-light">Através do Chat ou WhatsApp</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contato" class="py-3">
+		<h2 class="text-center my-3 my-xl-3">Entre em contato</h2>
+		<div class="container">
+			<div class="col col-md-8 mx-auto">
+				<form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+					novalidate="novalidate">
+					<div class="row">
+						<div class="col-sm-6 py-3">
+							<div class="form-group">
+								<input class="form-control" name="name" id="name" type="text"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'"
+									placeholder='Nome'>
+							</div>
+						</div>
+						<div class="col-sm-6 py-3">
+							<div class="form-group">
+								<input class="form-control" name="email" id="email" type="email"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'"
+									placeholder='Email'>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="form-group">
+								<input class="form-control" name="subject" id="subject" type="text"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'"
+									placeholder='Assunto'>
+							</div>
+						</div>
+						<div class="col-12 py-3">
+							<div class="form-group">
+								<textarea class="form-control w-100" name="message" id="message" cols="20" rows="9"
+									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"
+									placeholder='Escreva sua mensagem'></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 py-2 bg-dark text-bg-dark rounded-1">
+						<p class="card-text text-center ">Enviar</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer class="bg-dark py-5 text-center">
+		<div>
+
+		</div>
+		<div>
+			<p class="container card-text py-3 text-light">2023
+				<i class="text-danger bi bi-c-circle"></i> Desenvolvido por <strong
+					class="text-primary">_dinizDev</strong> | Projeto fictício sem fins comerciais.
+			</p>
+		</div>
+		
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+		</script>
+</body>
+
 </html>
